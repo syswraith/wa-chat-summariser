@@ -1,0 +1,25 @@
+{
+  "name": "wa-chat-summariser",
+  "version": "1.0.0",
+  "description": "- iOS 18.3 update brings Apple Intelligence features to iPhone - In a move to bring the much awaited AI-enabled features to the iPhone, Apple rushes prototypes into production. - The result: insert images here - The result: Apple rolls back Apple Intelligence features not even n months after releasing them!",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syswraith/wa-chat-summariser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/syswraith/wa-chat-summariser/issues"
+  },
+  "homepage": "https://github.com/syswraith/wa-chat-summariser#readme",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}
