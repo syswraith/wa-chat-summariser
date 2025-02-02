@@ -24,7 +24,7 @@ Department: First Year Engineering
 <br><br>
 # The problem
 
-- Large Language Model (LLM) is not a database with exact knowledge. It's a mesh of statistical weights and math based on what it's been trained on.
+- A Large Language Model (LLM) is not a database with exact knowledge. It's a mesh of statistical weights and math based on what it's been trained on.
 - It doesn't really know it even handles text: Words are broken up into tokens that are then converted to numbers. Numbers are all an LLM deals with internally. Through training on a silly amount of data it learns patterns in the numbers that happen to be sequences of text at a higher level.
 - Due to this it can be completely and utterly wrong without "knowing" and it will be as confident delivering something sane and  something utterly wrong.
 <br><br>
@@ -38,9 +38,9 @@ Department: First Year Engineering
 - The models that utilize this particular approach of reiterating over the responses generated are called "chain of thought" models.
 - Example conversation with a chain-of-thought model
 
-![[strawberry.png]]
+![alt](images/strawberry.png)
 No, we're not there yet
-![[strawberry 2.png]]
+![alt](images/strawberry 2.png)
 - This is a classical test to determine whether an LLM is capable of human-like lexical analysis.
 - In this test, it makes sure that it has reiterated over its response for a long time before giving out the final response. This **reduces** the **error margin** of it generating an undesirable response.
 <br><br>
