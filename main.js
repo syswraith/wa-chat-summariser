@@ -12,9 +12,14 @@ client.on('ready', () => console.log('Client is ready!'));
 client.on('message_create', async msg => {
     if (msg.body.startsWith("!summarise") && msg.fromMe)
     {
+	let message_collection = [];
 	let number_of_messages = msg.body.split(" ")[1]
 	let chat = await msg.getChat()
 	let asc_messages = await chat.fetchMessages({limit: number_of_messages})
+	asc_messages.forEach((message)=>{
+	    message_collection.push(`${message.author}: ${message.body}`)
+	})
+
     }
 });
 
