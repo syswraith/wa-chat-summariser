@@ -1,7 +1,11 @@
-import { Client } from 'whatsapp-web.js';
+import pkg from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
 
-const client = new Client();
+const { Client, LocalAuth } = pkg;
+
+const client = new Client({
+    authStrategy: new LocalAuth()
+});
 
 client.on('ready', () => console.log('Client is ready!'));
 
