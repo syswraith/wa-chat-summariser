@@ -86,8 +86,8 @@ Higher the parameter count
 <br><br>
 # Results
 
-![[demo_chat.png]]
-![[demo_notif.png]]
+![alt](images/demo_chat.png)
+![alt](images/demo_notif.png)
 <br><br>
 # Conclusion
 
