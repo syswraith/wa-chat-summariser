@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/syswraith/wa-chat-summariser#readme",
   "dependencies": {
+    "ollama": "^0.5.12",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.26.0"
   }
