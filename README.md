@@ -2,11 +2,13 @@
 - iOS 18.3 update brings Apple Intelligence features to iPhone
 - In a move to bring the much awaited AI-enabled features to the iPhone, Apple rushes prototypes into production.
 - The result:
-![[breakup.jpeg]]
-![[divorced.png]]
-![[mom.png]]
-![[pregwife.jpg]]
-![[ts.jpg]]
+
+![breakup.jpeg](./images/breakup.jpeg)
+![divorced.png](./images/divorced.png)
+![mom.png](./images/mom.png)
+![pregwife.jpg](./images/pregwife.jpg)
+![ts.jpg](./images/ts.jpg)
+
 - Artificial misinformation (expand on this)
 - The result: Apple rolls back Apple Intelligence features not even n months after releasing them!
 
