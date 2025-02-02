@@ -2,6 +2,7 @@ import pkg from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
 import ollama from 'ollama';
 import axios from 'axios';
+import { readFile } from 'fs/promises'
 
 const { Client, LocalAuth } = pkg;
 
@@ -10,6 +11,8 @@ const client = new Client({
 });
 
 client.on('ready', () => console.log('[STATUS] WhatsApp client is ready'));
+
+const systemPrompt = await readFile('./system_prompt.txt', 'utf-8')
 
 client.on('message_create', async msg => {
     if (msg.body.startsWith("!summarise") && msg.fromMe)
@@ -26,16 +29,19 @@ client.on('message_create', async msg => {
 	// ai voodoo magic begins here
 
 	console.log("[STATUS] Sending messages to AI...")
-	const ai_response = await ollama.chat({
+
+	const ai_response = await ollama.generate({
 	    model: 'deepseek-r1',
-	    messages: [{ role: 'system', content: ( message_collection.join('\n') + '\n\n Summarise this chat in 395 characters.' ) }], 
+	    system: systemPrompt.trim(),
+	    prompt: message_collection.join('\n'), 
 	})
-	
-	let notif_content = ai_response.message.content.replace(/<think>.*?<\/think>/gs, '').trim()
+
+
+	let notif_content = ai_response.response.replace(/<think>.*?<\/think>/gs, '').trim()
 	console.log("[STATUS] Sending notification via NTFY...")
-	
+
 	// axios POST
-	
+
 	try {
 	    const response = await axios.post('https://ntfy.sh/feycomm', notif_content, {
 		headers: {
