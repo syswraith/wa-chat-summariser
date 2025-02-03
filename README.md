@@ -40,7 +40,7 @@ Department: First Year Engineering
 
 ![alt](images/strawberry.png)
 No, we're not there yet
-![alt](images/strawberry 2.png)
+![alt](images/strawberry2.png)
 - This is a classical test to determine whether an LLM is capable of human-like lexical analysis.
 - In this test, it makes sure that it has reiterated over its response for a long time before giving out the final response. This **reduces** the **error margin** of it generating an undesirable response.
 <br><br>
