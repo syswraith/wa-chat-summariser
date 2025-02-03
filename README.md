@@ -1,10 +1,3 @@
-```
-Project by Aryan Karekar, Rohan Jadhav, Dhruv Marulkar, Vihan Jade
-Division: C
-Roll Number: 33, 27, 37, 64
-Department: First Year Engineering
-```
-
 # Introduction
 
 - iOS 18.3 update brought *Apple Intelligence* features to the iPhone.
