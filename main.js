@@ -12,10 +12,10 @@ const client = new Client({
 
 client.on('ready', () => console.log('[STATUS] WhatsApp client is ready'));
 
-const systemPrompt = await readFile('./system_prompt.txt', 'utf-8')
+const systemPrompt = await readFile('./symprompt.txt', 'utf-8')
 
 client.on('message_create', async msg => {
-    if (msg.body.startsWith("!summarise") && msg.fromMe)
+    if (msg.body.startsWith("!summarise") /*&& msg.fromMe*/)
     {
 	let message_collection = [];
 	let number_of_messages = msg.body.split(" ")[1]
@@ -43,7 +43,7 @@ client.on('message_create', async msg => {
 	// axios POST
 
 	try {
-	    const response = await axios.post('https://ntfy.sh/feycomm', notif_content, {
+	    const response = await axios.post('https://ntfy.sh/feychat', notif_content, {
 		headers: {
 		    'Title': 'WhatsApp summary',
 		    'Priority': 'high',
