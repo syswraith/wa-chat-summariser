@@ -12,7 +12,7 @@ const client = new Client({
 
 client.on('ready', () => console.log('[STATUS] WhatsApp client is ready'));
 
-const systemPrompt = await readFile('./symprompt.txt', 'utf-8');
+const systemPrompt = await readFile('./system_prompt.txt', 'utf-8');
 
 client.on('message_create', async (msg) => {
     if (msg.body.startsWith("!summarise") && msg.fromMe) {
