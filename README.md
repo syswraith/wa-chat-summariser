@@ -84,4 +84,4 @@ Higher the parameter count
 <br><br>
 # Conclusion
 
-Even with its current limitations, this attempt at creating a notification service for Android has seen some success. While its not been thoroughly tested in a ***emotion-heavy*** context, such as a group chat who's messages deal more with human emotions and less with technical things, it can be optimized further to clearly recognize the tone of the conversations and generate accurate summaries.
+Even with its current limitations, this attempt at creating a notification service for Android has seen some success. While its not been thoroughly tested in an ***emotion-heavy*** context, such as a group chat who's messages deal more with human emotions and less with technical things, it can be optimized further to clearly recognize the tone of the conversations and generate accurate summaries.
