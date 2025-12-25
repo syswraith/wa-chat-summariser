@@ -1,6 +1,6 @@
 # Introduction
 
-blog: https://syswraith.github.io/blog/Simplified-alerts--Using-Deepseek-r1-to-summarize-chats
+blog: https://syswraith.com/blog/Blogs/Simplified-alerts--Using-Deepseek-r1-to-summarize-chats
 
 - iOS 18.3 update brought *Apple Intelligence* features to the iPhone.
 - In a move to bring the much awaited AI-enabled features to their ecosystem, Apple rushes prototypes into production.
